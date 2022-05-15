@@ -34,7 +34,7 @@ export default function Home() {
             <>
               <div className="flex items-center w-80">
                 <img src={user?.avatar} alt="" className="rounded-xl h-16 mr-4 w-16" />
-                <textarea className="rounded-xl ml-4 w-64" placeholder="What's happening?" value={dweetContent} onChange={e => setDweetContent(e.target.value)} />
+                <textarea className="rounded-xl ml-4 pl-2 w-64" placeholder="What's happening?" value={dweetContent} onChange={e => setDweetContent(e.target.value)} />
               </div>
               <div className="mt-2 flex justify-end w-72">
                 <Button label='Dweet' onClick={() => postDweet(dweetContent)} />
